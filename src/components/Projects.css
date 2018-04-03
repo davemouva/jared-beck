@@ -1,0 +1,69 @@
+.projectPage * {box-sizing: border-box;}
+
+.projectPage {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.projectPage .description,
+.projectPage .outerImageWrapper {
+  display:inline-block;
+  /* border:2px solid red; */
+  vertical-align: top;
+}
+
+.projectPage .description {width:40%;}
+
+.projectPage .outerImageWrapper {
+  width: 60%;
+  padding-right: 40px;
+  text-align: right;
+}
+
+.projectPage .imageGalleryTop,
+.projectPage .imageGalleryBottom {
+  /* border:2px solid green; */
+  width: 100%;
+  height:250px;
+  padding-bottom: 16px;
+}
+
+.imageGalleryTop > img,
+.imageGalleryBottom > img {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  vertical-align: top;
+}
+
+.projectPage .smallImgsRight {
+  /* border:1px solid black; */
+  display: inline-block;
+  height: 100%;
+  padding-left: 16px;
+
+}
+
+.projectPage .smallImgsRight img {
+ display: block;
+ height: 50%;
+ width: auto;
+}
+
+.projectPage .smallImgsRight img:first-child {
+  padding-bottom: 8px;
+}
+
+.projectPage .smallImgsRight img:last-child {
+  padding-top:8px;
+}
+
+.backArrow {
+  padding:20px 0 20px 10px;
+}
+
+.backArrow img {
+  width: 30px;
+}
+
+

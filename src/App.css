@@ -1,0 +1,88 @@
+
+.landingApp {
+  text-align: center;
+  border: 2px dashed white;
+  /* height:91vh;
+  width:95vw; */
+  height:90vh;
+  width:95vw;
+  margin: 30px auto ;
+  background-color: #f47c20;
+}
+
+.mainContainer .landing {
+  height:100%;
+  display:inline-flex;
+  align-items: center; 
+  margin:0 auto;
+}
+
+.mainContainer .landing-logo {
+  height:400px;
+}
+
+h1,h2 {
+  font-family: 'Saira Condensed', sans-serif;
+  text-transform:uppercase;
+}
+
+h3,h4{
+  font-family: 'Libre Baskerville', serif; 
+  margin-bottom:10px; 
+  margin-top:0;
+}
+
+h5 {
+  color:#9b9b9b;
+  font-family: 'Libre Baskerville', serif;  
+  font-weight:normal;
+  word-spacing: 3px;
+  font-size:12px;
+  margin:0;
+}
+
+h5:nth-child(3) {padding-top:10px;}
+
+p {
+  font-family: Courier,monospace;
+  font-size:12px;
+  color:#272727;
+  line-height:150%;
+}
+
+.mainContainer a {
+  text-decoration: none;
+  color:black;
+}
+
+.mainContainer h2.landingNav a {
+  color:white;
+  font-size:32px;
+}
+
+.mainContainer h2.landingNav a:hover {
+  text-shadow: 4px 4px 1px rgba(0, 108, 132, 1);
+  color:white;
+}
+
+
+.mainContainer h2.landingNav {
+  display:inline;
+  position: absolute;
+  top:320px;
+}
+
+.mainContainer h2.landingNav:first-child {left:0;} 
+.mainContainer h2.landingNav:last-child {right:80px;} 
+
+
+.mainContainer {
+  height:100%;
+  width:800px;
+  margin:0 auto;
+  position: relative;
+}
+
+body {background-color: #fbfbfb;}
+
+

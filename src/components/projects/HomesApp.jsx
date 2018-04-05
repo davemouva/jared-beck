@@ -42,30 +42,24 @@ export default class HomesApp extends Component {
                             <img src={BackArrow} alt="Back to Portfolio" />
                         </Link>
                     </div>
-                    <div className="outerImageWrapper">
-                        <section className="imageGalleryTop">
+                    <div className="projectContainer">
+                        <section className="galleryContainer">
                             <img src={HomesApp1} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />
-                            <div className="smallImgsRight">
-                                <img src={HomesApp5} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                                <img src={HomesApp3} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
-                            </div>
-                        </section>
-                        <section className="imageGalleryBottom">
+                            <img src={HomesApp5} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
+                            <img src={HomesApp3} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
                             <img src={HomesApp4} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 3 })} />
-                            <div className="smallImgsRight">
-                                <img src={HomesApp2} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
-                                <img src={HomesApp6} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 5 })} />
-                            </div>
+                            <img src={HomesApp2} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
+                            <img src={HomesApp6} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 5 })} />
+                        </section>
+                        <section className="description">
+                            <h3>iOS App, Homes.com</h3>
+                            <h5>UI/UX</h5>
+                            <h5>Nov, 2009</h5>
+                            <div className="fakeHR" />
+                            <p>This is a whole bunch of nonsense about this particular project.</p>
+                            <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
                         </section>
                     </div>
-                    <section className="description">
-                        <h3>iOS App, Homes.com</h3>
-                        <h5>UI/UX</h5>
-                        <h5>Nov, 2009</h5>
-                        <div className="fakeHR" />
-                        <p>This is a whole bunch of nonsense about this particular project.</p>
-                        <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
-                    </section>
                 </div>
                 <Footer />
                 {isOpen && (

@@ -14,28 +14,29 @@
 }
 
 .projectContainer {
-  width:70%;
-  /* border:2px solid blue; */
+  width:90%;
+  border:2px solid blue;
   margin:0 auto 80px;
 }
 
 .projectPage .description {
   display:inline-block;
   vertical-align: top;
-  width:45%;
-  /* border:2px solid red; */
+  width:500px;
+  border:2px solid red;
   float: right;
 }
 
 .galleryContainer {
-  height:400px;
+  height:350px;
   width:50%;
-  /* border:5px solid black; */
+  border:2px solid black;
   display:inline-grid;
   grid-template-rows:repeat(4,25%);
-  grid-template-columns:60% 40%;
-  grid-gap:10px;
+  grid-template-columns:60% 30%;
+  grid-gap:12px;
 }
+
 
 .galleryContainer img {
   /*   border:1px solid red; */

@@ -41,30 +41,24 @@ export default class Lovegrove extends Component {
                             <img src={BackArrow} alt="Back to Portfolio" />
                         </Link>
                     </div>
-                    <div className="outerImageWrapper">
-                        <section className="imageGalleryTop">
+                    <div className="projectContainer">
+                        <section className="galleryContainer">
                             <img src={Lovegrove1} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />
-                            <div className="smallImgsRight">
-                                <img src={Lovegrove2} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
-                                <img src={Lovegrove3} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
-                            </div>
-                        </section>
-                        <section className="imageGalleryBottom">
+                            <img src={Lovegrove2} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
+                            <img src={Lovegrove3} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
                             <img src={Lovegrove4} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 3 })} />
-                            <div className="smallImgsRight">
-                                <img src={Lovegrove5} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                                <img src={Lovegrove6} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 5 })} />
-                            </div>
+                            <img src={Lovegrove5} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
+                            <img src={Lovegrove6} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 5 })} />
+                        </section>
+                        <section className="description">
+                            <h3>Ross Lovegrove, Website</h3>
+                            <h5>Web Development</h5>
+                            <h5>Nov, 2009</h5>
+                            <div className="fakeHR" />
+                            <p>This is a whole bunch of nonsense about this particular project.</p>
+                            <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
                         </section>
                     </div>
-                    <section className="description">
-                        <h3>Ross Lovegrove, Website</h3>
-                        <h5>Web Development</h5>
-                        <h5>Nov, 2009</h5>
-                        <div className="fakeHR" />
-                        <p>This is a whole bunch of nonsense about this particular project.</p>
-                        <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
-                    </section>
                 </div>
                 <Footer />
                 {isOpen && (

@@ -41,29 +41,23 @@ export default class Icons extends Component {
                             <img src={BackArrow} alt="Back to Portfolio" />
                         </Link>
                     </div>
-                    <div className="outerImageWrapper">
-                        <section className="imageGalleryTop">
+                    <div className="projectContainer">
+                        <section className="galleryContainer">
                             <img src={Icon1} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />
-                            <div className="smallImgsRight">
-                                <img src={Icon2} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
-                                <img src={Icon3} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
-                            </div>
-                        </section>
-                        <section className="imageGalleryBottom">
+                            <img src={Icon2} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
+                            <img src={Icon3} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
                             <img src={Icon4} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 3 })} />
-                            <div className="smallImgsRight">
-                                <img src={Icon5} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                            </div>
+                            <img src={Icon5} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
+                        </section>
+                        <section className="description">
+                            <h3>Icon Construction Grid</h3>
+                            <h5>UI/UX, System Design</h5>
+                            <h5>Nov, 2009</h5>
+                            <div className="fakeHR" />
+                            <p>This is a whole bunch of nonsense about this particular project.</p>
+                            <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
                         </section>
                     </div>
-                    <section className="description">
-                        <h3>Icon Construction Grid</h3>
-                        <h5>UI/UX, System Design</h5>
-                        <h5>Nov, 2009</h5>
-                        <div className="fakeHR" />
-                        <p>This is a whole bunch of nonsense about this particular project.</p>
-                        <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
-                    </section>
                 </div>
                 <Footer />
                 {isOpen && (

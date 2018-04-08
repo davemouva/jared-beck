@@ -38,28 +38,23 @@ export default class Bodacious extends Component {
                             <img src={BackArrow} alt="Back to Portfolio" />
                         </Link>
                     </div>
-                    <div className="outerImageWrapper">
-                        <section className="imageGalleryTop">
-                            <img src={images[0]} alt="" onClick={() => this.setState({ isOpen: true, photoIndex:0 })}/>
-                            <div className="smallImgsRight">
-                                <img src={images[1]} alt="" onClick={() => this.setState({ isOpen: true, photoIndex:1 })}/>
-                                <img src={images[2]} alt="" onClick={() => this.setState({ isOpen: true, photoIndex:2 })}/>
-                            </div>
+
+                    <div className="projectContainer">
+                        <section className="galleryContainer">
+                            <img src={Bod1} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />
+                            <img src={Bod2} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
+                            <img src={Bod3} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
+                            <img src={Bod4} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 3 })} />
                         </section>
-                        <section className="imageGalleryBottom">
-                            <img src={images[3]} alt="" onClick={() => this.setState({ isOpen: true, photoIndex:3 })} />
-                            <div className="smallImgsRight">
-                            </div>
+                        <section className="description">
+                            <h3>Bodacious Pizza</h3>
+                            <h5>Branding, Identity, Product</h5>
+                            <h5>Nov, 2009</h5>
+                            <div className="fakeHR" />
+                            <p>This is a whole bunch of nonsense about this particular project.</p>
+                            <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
                         </section>
                     </div>
-                    <section className="description">
-                        <h3>Bodacious Pizza</h3>
-                        <h5>Branding, Identity, Product</h5>
-                        <h5>Nov, 2009</h5>
-                        <div className="fakeHR" />
-                        <p>This is a whole bunch of nonsense about this particular project.</p>
-                        <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
-                    </section>
                 </div>
                 < Footer />
                 {isOpen && (

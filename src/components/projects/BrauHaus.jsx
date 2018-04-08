@@ -43,6 +43,7 @@ export default class BrauHaus extends Component {
                             <img src={BackArrow} alt="Back to Portfolio" />
                         </Link>
                     </div>
+                    
                     <div className="projectContainer">
                         <section className="galleryContainer">
                             <img src={Brau1} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />
@@ -52,6 +53,7 @@ export default class BrauHaus extends Component {
                             <img src={Brau5} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
                             <img src={Brau6} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 5 })} />
                         </section>
+
                         <section className="description">
                             <h3>Brau Haus Brewing</h3>
                             <h5>Branding, Identity, Packaging</h5>

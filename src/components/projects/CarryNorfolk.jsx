@@ -35,27 +35,21 @@ export default class CarryNorfolk extends Component {
                             <img src={BackArrow} alt="Back to Portfolio" />
                         </Link>
                     </div>
-                    <div className="outerImageWrapper">
-                        <section className="imageGalleryTop">
+                    <div className="projectContainer">
+                        <section className="galleryContainer">
                             <img src={Carry1} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />
-                            <div className="smallImgsRight">
-                                <img src={Carry2} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
-                                <img src={Carry3} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
-                            </div>
+                            <img src={Carry2} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
+                            <img src={Carry3} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
                         </section>
-                        <section className="imageGalleryBottom">
-                            <div className="smallImgsRight">
-                            </div>
+                        <section className="description">
+                            <h3>Carry Norfolk</h3>
+                            <h5>Multimedia, Branding, Identity</h5>
+                            <h5>Nov, 2009</h5>
+                            <div className="fakeHR" />
+                            <p>This is a whole bunch of nonsense about this particular project.</p>
+                            <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
                         </section>
                     </div>
-                    <section className="description">
-                        <h3>Carry Norfolk</h3>
-                        <h5>Multimedia, Branding, Identity</h5>
-                        <h5>Nov, 2009</h5>
-                        <div className="fakeHR" />
-                        <p>This is a whole bunch of nonsense about this particular project.</p>
-                        <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
-                    </section>
                 </div>
                 <Footer />
                 {isOpen && (

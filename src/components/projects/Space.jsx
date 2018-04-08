@@ -8,7 +8,7 @@ import Lightbox from 'react-image-lightbox';
 import Space1 from '../../img/Space/Space1.jpg';
 import Space2 from '../../img/Space/Space2.jpg';
 import Space3 from '../../img/Space/Space3.jpg';
-import Space4 from '../../img/Space/Space4.jpg'; 
+import Space4 from '../../img/Space/Space4.jpg';
 import Space5 from '../../img/Space/Space5.jpg';
 
 const images = [
@@ -39,29 +39,23 @@ export default class Space extends Component {
                             <img src={BackArrow} alt="Back to Portfolio" />
                         </Link>
                     </div>
-                    <div className="outerImageWrapper">
-                        <section className="imageGalleryTop">
+                    <div className="projectContainer">
+                        <section className="galleryContainer">
                             <img src={Space1} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />
-                            <div className="smallImgsRight">
-                                <img src={Space2} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
-                                <img src={Space3} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
-                            </div>
-                        </section>
-                        <section className="imageGalleryBottom">
+                            <img src={Space2} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
+                            <img src={Space3} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
                             <img src={Space4} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 3 })} />
-                            <div className="smallImgsRight">
-                                <img src={Space5} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                            </div>
+                            <img src={Space5} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
+                        </section>
+                        <section className="description">
+                            <h3>Space Age</h3>
+                            <h5>Web Development, Illustration</h5>
+                            <h5>Nov, 2009</h5>
+                            <div className="fakeHR" />
+                            <p>This is a whole bunch of nonsense about this particular project.</p>
+                            <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
                         </section>
                     </div>
-                    <section className="description">
-                        <h3>Space Age</h3>
-                        <h5>Web Development, Illustration</h5>
-                        <h5>Nov, 2009</h5>
-                        <div className="fakeHR" />
-                        <p>This is a whole bunch of nonsense about this particular project.</p>
-                        <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
-                    </section>
                 </div>
                 <Footer />
                 {isOpen && (

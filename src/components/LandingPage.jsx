@@ -18,14 +18,13 @@ export default class LandingPage extends Component {
         return (
             <div className="landingApp">
                 <div className="mainContainer">
-                    <h2 className="landingNav"><Link to="/portfolio">Portfolio</Link></h2>
+                    <h2 className="landingNav portfolio"><Link to="/portfolio">Portfolio</Link></h2>
                     <div className="landing">
                         <img src={LandingImage} className="landing-logo" alt="landing logo" />
                     </div>
-                    <h2 className="landingNav"><Link to="/shop">Shop</Link></h2>
+                    <h2 className="landingNav shop"><Link to="/shop">Shop</Link></h2>
                 </div>
             </div>
-
         );
     }
 }

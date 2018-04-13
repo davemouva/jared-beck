@@ -1,3 +1,19 @@
+#root > .outerAbout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* border:4px solid yellow; */
+}
+
+#root > div > .aboutCont {
+  flex:1 0 auto;
+}
+
+.aboutCont {
+  margin: 50px auto 0;
+  max-width:800px;
+}
+
 .aboutCont .imageGallery,
 .aboutCont .description {
   display: inline-block;
@@ -19,14 +35,6 @@
   vertical-align: top;
   margin-left:40px;
 }
-
-
-
-.aboutCont {
-  margin: 50px auto 0;
-  max-width:800px;
-}
-
 
 .aboutCont .fakeHR {
   width:100%;

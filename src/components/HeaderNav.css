@@ -7,24 +7,18 @@
 }
 
 .navCont .homeFlag {
+  display: none;
+}
+
+.navCont .menuFlag {
   width:auto;
   height: 45px;
   position: absolute;
   top:20px;
-  left:30px;
+  left:30px; 
 }
 
-.navCont .menuCont {
-  width:30%;
-  margin:0 auto;
-  height:100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
+
 
 .navCont h2 {
   display: inline-block;
@@ -34,7 +28,7 @@
 
 .navCont h2 > a {
   color:#006c84;
-  font-size:20px;
+  font-size:40px;
   text-decoration: none;
 }
 
@@ -43,3 +37,63 @@
   color:#f47c20;
 }
 
+.navCont .menuCont {
+  display: none;
+}
+
+.sideMenuVisible + .menuCont{
+  background-color:white;
+  height:100vh;
+  width:100vw;
+  z-index:2;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+}
+
+.menuFlag.sideMenuVisible {
+  position: fixed;
+  z-index: 3;
+}
+
+/* --------------------- MEDIA QUERY ------------------------------------*/
+
+@media (min-width:625px){
+  .navCont .homeFlag {
+    width:auto;
+    height: 45px;
+    position: absolute;
+    top:20px;
+    left:30px;
+    display: initial; 
+  }
+
+  .navCont .menuFlag {
+    display: none;
+  }
+
+  .navCont .menuCont {
+    width:30%;
+    margin:0 auto;
+    height:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+
+  .navCont h2 > a {
+    font-size:20px;
+  }
+}

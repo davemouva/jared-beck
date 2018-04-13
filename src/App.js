@@ -4,6 +4,7 @@ import  './components/About.css';
 import './components/Footer.css';
 import './components/Portfolio.css';
 import './components/Projects.css';
+import './components/Blog.css';
 import router from './router';
 
 export default () => router;

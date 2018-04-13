@@ -1,0 +1,15 @@
+#root > .outerBlog {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root > div > .blogContent {
+  flex:1 0 auto;
+}
+
+.blogContent {
+  border:2px solid black;
+  width:40%;
+  margin:0 auto;
+}

@@ -31,7 +31,7 @@ export default class Space extends Component {
     render() {
         const { photoIndex, isOpen } = this.state;
         return (
-            <div>
+            <div className="outerProject">
                 <HeaderNav />
                 <div className="projectPage">
                     <div className="backArrow">

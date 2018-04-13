@@ -21,23 +21,21 @@ export default class Blog extends Component {
       })
   }
   render() {
-    let movies = this.state.hjposts.map((hjpost, index) => {
+    let posts = this.state.hjposts.map((hjpost, index) => {
       return <div key={index}>
-        <img src={hjpost.acf.image.url} alt="" />
-        <p><strong>Title:</strong> {hjpost.title.rendered}</p>
-        <p><strong>Date:</strong> {hjpost.acf.date}</p>
-        <p><strong>Description:</strong>
-          <div dangerouslySetInnerHTML={{ __html: hjpost.content.rendered }} />
-        </p>
+        <p className="postTitle">{hjpost.title.rendered}</p>
+        <p className="postDate">{hjpost.acf.date}</p>
+        <p className="postContent"><div dangerouslySetInnerHTML={{ __html: hjpost.content.rendered }} /></p>
 
       </div>
     });
 
     return (
-      <div>
+      <div className="outerBlog">
         <HeaderNav />
-        <h2>This is my blog page</h2>
-        {movies}
+        <div className="blogContent">
+          {posts}
+        </div>
         <Footer />
       </div>
     );

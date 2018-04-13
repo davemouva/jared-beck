@@ -6,7 +6,7 @@ import Footer from './Footer.jsx';
 export default class About extends Component {
     render() {
         return (
-            <div>
+            <div className="outerAbout">
                 <HeaderNav />
                 <div className="aboutCont">
                     <section className="imageGallery">

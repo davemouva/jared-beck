@@ -11,7 +11,7 @@ export default class Blog extends Component {
     }
   }
   componentDidMount() {
-    let dataURL = "http://localhost:8888/wp-json/wp/v2/hjpost?_embed";
+    let dataURL = "http://localhost:8888/wordpress/wp-json/wp/v2/hjposts?_embed";
     fetch(dataURL)
       .then(res => res.json())
       .then(res => {
@@ -26,6 +26,7 @@ export default class Blog extends Component {
         <p className="postTitle">{hjpost.title.rendered}</p>
         <p className="postDate">{hjpost.acf.date}</p>
         <p className="postContent"><div dangerouslySetInnerHTML={{ __html: hjpost.content.rendered }} /></p>
+        <div className="horizRule"></div>
 
       </div>
     });

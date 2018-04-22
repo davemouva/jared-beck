@@ -9,7 +9,47 @@
 }
 
 .blogContent {
-  border:2px solid black;
   width:40%;
-  margin:0 auto;
+  margin:60px auto;
+}
+
+.postContent {
+  /* margin-bottom:-30px; */
+}
+
+.postContent p{
+  font-size: 13px;
+}
+
+.postContent p > img
+{
+ width:100%;
+ height:auto;
+}
+
+/* THE PORTRAIT CLASS IS ADDED INDIVIDUALLY VIA WP */
+.postContent p > img.portrait {
+  width:100%;
+}
+
+iframe {
+  width:100%;
+}
+
+.postTitle {
+  font-family: 'Libre Baskerville', serif; 
+  font-size:22px;
+  font-weight: bold;
+  margin:0;
+}
+
+.postDate {
+  color:#9b9b9b;
+  font-size:14px;
+  margin:0;
+}
+
+.horizRule {
+  border-bottom:1px solid #ddd;
+  margin:30px 0;
 }

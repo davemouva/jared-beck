@@ -1,3 +1,6 @@
+body {background-color: #fbfbfb;}
+
+
 .landing,
 .landingNav {
   display: block;
@@ -41,7 +44,6 @@ h3,h4{
 }
 
 .mainContainer {
-  /* border:1px solid black; */
   height:100vh;
   display: flex;
   flex-direction: column;
@@ -49,10 +51,18 @@ h3,h4{
 }
 
 .loadingGif {
-  border:2px solid black;
-  
+  padding:20px;
+  width:90%;
+  height: auto;
+  margin:0 auto;
 }
 
+.loadingGifContainer {
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 /* ------------------------------  BREAKPOINT -------------------------------------------- */
 
@@ -79,9 +89,7 @@ h3,h4{
     font-size:12px;
     margin:0;
   }
-  
-  h5:nth-child(3) {padding-top:10px;}
-  
+    
   p {
     font-family: Courier,monospace;
     font-size:12px;
@@ -109,5 +117,8 @@ h3,h4{
     /* border:2px solid black; */
   }
   
-  body {background-color: #fbfbfb;}
+
+  .loadingGif {
+    width:50%;
+  }
 }

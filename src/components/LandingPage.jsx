@@ -6,19 +6,24 @@ import { Link } from "react-router-dom";
 export default class LandingPage extends Component {
     componentWillMount() { document.body.style.backgroundColor = "#f47c20"; }
     componentDidMount() {
-       setTimeout(function(){ 
-            let pencilLoader = document.getElementsByClassName('loadingGif');
+        let mainContainer = document.getElementsByClassName('mainContainer')[0];
+        mainContainer.style.display = "none";
+        
+        setTimeout(function () {
+            let pencilLoader = document.getElementsByClassName('loadingGifContainer')[0];
             console.log(pencilLoader);
-            pencilLoader[0].style.display = "none";
-        }, 3000);
-
+            pencilLoader.style.display = "none";
+            mainContainer.style.display = "flex";
+        }, 2500);
     }
     componentWillUnmount() { document.body.style.backgroundColor = "#fbfbfb"; }
 
     render() {
         return (
             <div className="landingApp">
-                <img className="loadingGif" src={LoadingGif} alt="Loading Animation" />
+                <div className="loadingGifContainer">
+                    <img className="loadingGif" src={LoadingGif} alt="Loading Animation" />
+                </div>
                 <div className="mainContainer">
                     <h2 className="landingNav portfolio"><Link to="/portfolio">Portfolio</Link></h2>
                     <div className="landing">

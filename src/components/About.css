@@ -1,39 +1,24 @@
-#root > .outerAbout {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  /* border:4px solid yellow; */
-}
-
-#root > div > .aboutCont {
-  flex:1 0 auto;
-}
-
 .aboutCont {
-  margin: 50px auto 0;
-  max-width:800px;
+  margin-bottom: 50px;
 }
 
 .aboutCont .imageGallery,
 .aboutCont .description {
-  display: inline-block;
+  display: block;
 }
 
 .aboutCont .imageGallery {
-  text-align: right; 
-   width:40%;
+  text-align: center;
+  margin-top:15px;
+}
+
+.aboutCont .description  {
+  padding:20px;
 }
 
 .aboutCont .imageGallery img {
-  margin-bottom:10px;
-}
-
-
-
-.aboutCont .description {
-  width:45%;
-  vertical-align: top;
-  margin-left:40px;
+  width:90%;
+  margin-top:10px;
 }
 
 .aboutCont .fakeHR {
@@ -42,5 +27,103 @@
   border-bottom:1px solid #bbb;
   margin:20px 0;
   width:30%;
+}
+
+.aboutCont h5 {
+  color:#9b9b9b;
+  font-family: 'Libre Baskerville', serif;  
+  font-weight:normal;
+  font-size:12px;
+  margin:10px;
+}
+
+.aboutCont p {
+  font-family: Courier,monospace;
+  font-size: 12px;
+  color: #272727;
+  line-height: 135%;
+}
+
+/* ----------------- BREAK POINT --------------------------- */
+
+@media (min-width:520px) {
+  .aboutCont {
+    width:80%;
+    margin:0 auto 50px;
+  }
+}
+
+/* ------------------------- BREAK POINT ----------------- */
+@media (min-width:625px) {
+  .aboutCont {
+    margin:30px auto 50px;
+  }
+}
+
+
+/* ------------------------- BREAK POINT ----------------- */
+
+@media (min-width:736px) {
+  .aboutCont {
+    width:50%;
+  }
+
+  .aboutCont .description {
+    padding-top:30px;
+  }
+}
+
+/* ---------------------- BREAK POINT ------------- */
+@media (min-width:1200px){
+  aboutCont .imageGallery,
+  .aboutCont .description {
+    display: inline-block;
+  }
+
+  .aboutCont .imageGallery,
+  .aboutCont .description {
+  display: inline-block;
+  }
+
+  .outerAbout {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutCont {
+    margin: 50px auto;
+    max-width:800px;
+    flex:1 0 auto;
+  }
+
+  .aboutCont .imageGallery {
+    text-align: right; 
+     width:40%;
+     margin-top:0;
+  }
+  
+  .aboutCont .imageGallery img {
+    margin-bottom:10px;
+  }
+  
+  .aboutCont .description {
+    width:45%;
+    vertical-align: top;
+    margin-left:40px;
+  }
+
+
+  .aboutCont h5 {
+    margin:0;
+  }
+
+  .aboutCont h5:nth-child(3) {
+    padding-top: 10px;
+  }
+  
+  .aboutCont p {
+    line-height: 150%;
+  }
 }
 

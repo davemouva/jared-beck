@@ -31,6 +31,15 @@ export default class MyHomes extends Component {
         };
     }
     render() {
+        var numberSetter = 0;
+        function deviceSizer(x) {
+            if (x.matches) {
+                numberSetter = 100;
+            }
+        }
+        var x = window.matchMedia("(min-width: 700px)")
+        deviceSizer(x)
+
         const { photoIndex, isOpen } = this.state;
         return (
             <div className="outerProject">
@@ -55,8 +64,8 @@ export default class MyHomes extends Component {
                             <h5>UI/UX</h5>
                             <h5>Nov, 2009</h5>
                             <div className="fakeHR" />
-                            <p>This is a whole bunch of nonsense about this particular project.</p>
-                            <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
+                            <p>UI design lead on this project for Homes.com. MyHomes was created as a collaborative space between home buyers and real estate agents, and everybody else in between. We wanted to take some of the “process” out of the home buying process. MyHomes helps to foster an atmosphere that made the experience of buying a home more symbiotic, more organized, and just more fun.  </p>
+                            <p>Work for Vigil included some identity and logo design, some packaging for the product, and also some apparel goodies. A local business based out of Norfolk, Va. with a small load of product to push, and a shit load of heart. </p>
                         </section>
                     </div>
                 </div>
@@ -78,7 +87,7 @@ export default class MyHomes extends Component {
                             })
                         }
                         enableZoom={false}
-                        imagePadding={100}
+                        imagePadding={numberSetter}
                     />
                 )}
             </div>

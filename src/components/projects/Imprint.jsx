@@ -31,6 +31,15 @@ export default class Imprint extends Component {
         };
     }
     render() {
+        var numberSetter = 0;
+        function deviceSizer(x) {
+            if (x.matches) {
+                numberSetter = 100;
+            }
+        }
+        var x = window.matchMedia("(min-width: 700px)")
+        deviceSizer(x)
+
         const { photoIndex, isOpen } = this.state;
         return (
             <div className="outerProject">
@@ -55,8 +64,8 @@ export default class Imprint extends Component {
                             <h5>Multimedia, Branding, Identity</h5>
                             <h5>Nov, 2009</h5>
                             <div className="fakeHR" />
-                            <p>This is a whole bunch of nonsense about this particular project.</p>
-                            <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
+                            <p>Imprint’s identity was based on total flexibility of use. The “i” logo mark, well, it stands for Imprint but it’s also a great window for incorporating images, animations, video, or whatever multimedia case that could be needed. </p>
+                            <p>The flexibility of use was just what Imprint was looking for, not only as a screen printing business, but also a web and print design studio. They covered all their bases on the multi-service front, and this identity package helps them continue to do that.</p>
                         </section>
                     </div>
                 </div>
@@ -78,7 +87,7 @@ export default class Imprint extends Component {
                             })
                         }
                         enableZoom={false}
-                        imagePadding={100}
+                        imagePadding={numberSetter}
                     />
                 )}
             </div>

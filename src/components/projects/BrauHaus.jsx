@@ -33,6 +33,14 @@ export default class BrauHaus extends Component {
         };
     }
     render() {
+        var numberSetter = 0;
+        function deviceSizer(x) {
+            if (x.matches) {
+                numberSetter = 100;
+            }
+        }
+        var x = window.matchMedia("(min-width: 700px)")
+        deviceSizer(x)
         const { photoIndex, isOpen } = this.state;
         return (
             <div className="outerProject">
@@ -59,8 +67,8 @@ export default class BrauHaus extends Component {
                             <h5>Branding, Identity, Packaging</h5>
                             <h5>Nov, 2009</h5>
                             <div className="fakeHR" />
-                            <p>This is a whole bunch of nonsense about this particular project.</p>
-                            <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
+                            <p>Brau Haus is the microbrewery chillin on the corner that all the other breweries wish they could be. Brau Haus packs a snarky attitude and a genuine love for puns. Try the "BRAU F!@*KIN' DOWN" or maybe the "BRAU YOU DOIN'?" or maybe even the new German Witbeir "MEIN BRAULEIN."</p>
+                            <p>But really, Brau Haus packs slick design, packaging, and a just hip enough attitude that puts it above the competition. The catchy beer names are just extra credit.</p>
                         </section>
                     </div>
                 </div>
@@ -82,7 +90,7 @@ export default class BrauHaus extends Component {
                             })
                         }
                         enableZoom={false}
-                        imagePadding={100}
+                        imagePadding={numberSetter}
                     />
                 )}
             </div>

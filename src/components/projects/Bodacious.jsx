@@ -28,6 +28,14 @@ export default class Bodacious extends Component {
         };
     }
     render() {
+        var numberSetter = 0;
+        function deviceSizer(x) {
+            if (x.matches) {
+                numberSetter = 100;
+            }
+        }
+        var x = window.matchMedia("(min-width: 700px)")
+        deviceSizer(x)
         const { photoIndex, isOpen } = this.state;
         return (
             <div className="outerProject">
@@ -51,8 +59,7 @@ export default class Bodacious extends Component {
                             <h5>Branding, Identity, Product</h5>
                             <h5>Nov, 2009</h5>
                             <div className="fakeHR" />
-                            <p>This is a whole bunch of nonsense about this particular project.</p>
-                            <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
+                            <p>Logo and type created for Bodacious Pizza. Bodacious is a food truck operating in and around the Hampton Roads area of Virginia. This logo reflects on the mobility of their tasty pies, and the brick oven in which they're created.</p>
                         </section>
                     </div>
                 </div>
@@ -74,7 +81,7 @@ export default class Bodacious extends Component {
                             })
                         }
                         enableZoom={false}
-                        imagePadding={100}
+                        imagePadding={numberSetter}
                     />
                 )}
 

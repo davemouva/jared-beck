@@ -32,6 +32,15 @@ export default class HomesApp extends Component {
         };
     }
     render() {
+        var numberSetter = 0;
+        function deviceSizer(x) {
+            if (x.matches) {
+                numberSetter = 100;
+            }
+        }
+        var x = window.matchMedia("(min-width: 700px)")
+        deviceSizer(x)
+
         const { photoIndex, isOpen } = this.state;
         return (
             <div className="outerProject">
@@ -56,8 +65,8 @@ export default class HomesApp extends Component {
                             <h5>UI/UX</h5>
                             <h5>Nov, 2009</h5>
                             <div className="fakeHR" />
-                            <p>This is a whole bunch of nonsense about this particular project.</p>
-                            <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
+                            <p>UI design lead on the Homes.com native iOS app. The app redesign came shortly after a redesign of Homes.com’s web experience and we wanted the app to reflect that as well as embrace the UI elements familiar and intuitive to the iOS user. The app takes advantage of both the native UI of iOS and blends it with the design that is reflective of the Homes.com personality.</p>
+                            <p>The result is an app that provides an air of both reliability and familiarity. Pair off between the Homes.com web experience and the app experience and enjoy the frictionless transition between the two, all while incorporating what you’ve come to love and understand about your iphone.</p>
                         </section>
                     </div>
                 </div>
@@ -79,7 +88,7 @@ export default class HomesApp extends Component {
                             })
                         }
                         enableZoom={false}
-                        imagePadding={100}
+                        imagePadding={numberSetter}
                     />
                 )}
             </div>

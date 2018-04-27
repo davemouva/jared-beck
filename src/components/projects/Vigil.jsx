@@ -31,6 +31,15 @@ export default class Vigil extends Component {
         };
     }
     render() {
+        var numberSetter = 0;
+        function deviceSizer(x) {
+            if (x.matches) {
+                numberSetter = 100;
+            }
+        }
+        var x = window.matchMedia("(min-width: 700px)")
+        deviceSizer(x)
+
         const { photoIndex, isOpen } = this.state;
         return (
             <div className="outerProject">
@@ -55,8 +64,8 @@ export default class Vigil extends Component {
                             <h5>Branding, Illustration, Product</h5>
                             <h5>Nov, 2009</h5>
                             <div className="fakeHR" />
-                            <p>This is a whole bunch of nonsense about this particular project.</p>
-                            <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
+                            <p>Vigil Candle Company has a vibe to them inspired by Late Gothic and Renaissance aesthetic, mixed with a little bit of punk rock and little bit of vintage americana, rounded out with a little bit of “I’ll kick you in your teeth, but it’s ironic cause we make candles.” (That’s how irony works right?) </p>
+                            <p>Work for Vigil included some identity and logo design, some packaging for the product, and also some apparel goodies. A local business based out of Norfolk, Va. with a small load of product to push, and a shit load of heart. </p>
                         </section>
                     </div>
                 </div>
@@ -78,7 +87,7 @@ export default class Vigil extends Component {
                             })
                         }
                         enableZoom={false}
-                        imagePadding={100}
+                        imagePadding={numberSetter}
                     />
                 )}
             </div>

@@ -31,6 +31,14 @@ export default class Groweather extends Component {
     }
 
     render() {
+        var numberSetter = 0;
+        function deviceSizer(x) {
+            if (x.matches) {
+                numberSetter = 100;
+            }
+        }
+        var x = window.matchMedia("(min-width: 700px)")
+        deviceSizer(x)
         const { photoIndex, isOpen } = this.state;
         return (
             <div className="outerProject">
@@ -54,8 +62,8 @@ export default class Groweather extends Component {
                             <h5>UI/UX, Identity, Branding</h5>
                             <h5>Nov, 2009</h5>
                             <div className="fakeHR" />
-                            <p>This is a whole bunch of nonsense about this particular project.</p>
-                            <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
+                            <p>Groweather is your little buddy out in the garden. It tells you the weather (obviously) but Groweather also tells you how that weather impacts your gardening regimine. Groweather provides you tips and tricks based on your climate, the season, and through its “patented customizable garden inventory” more specific information based on what it is you're growing.</p>
+                            <p>Gardening isn't the easiest thing, but with this powerful little app your black thumb will at least be a like a dark shade of green or something. Beautiful UI, simplified UX, and amazing information to boot.</p>
                         </section>
                     </div>
                 </div>
@@ -77,7 +85,7 @@ export default class Groweather extends Component {
                             })
                         }
                         enableZoom={false}
-                        imagePadding={100}
+                        imagePadding={numberSetter}
                     />
                 )}
             </div>

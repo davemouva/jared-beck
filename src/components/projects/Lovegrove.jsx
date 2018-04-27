@@ -5,20 +5,15 @@ import BackArrow from '../../img/back-arrow.png';
 import { Link } from "react-router-dom";
 import Lightbox from 'react-image-lightbox';
 
-import Lovegrove1 from '../../img/Lovegrove/Lovegrove1.jpg';
-import Lovegrove2 from '../../img/Lovegrove/Lovegrove2.png';
-import Lovegrove3 from '../../img/Lovegrove/Lovegrove3.jpg';
-import Lovegrove4 from '../../img/Lovegrove/Lovegrove4.jpg';
-import Lovegrove5 from '../../img/Lovegrove/Lovegrove5.jpg';
-import Lovegrove6 from '../../img/Lovegrove/Lovegrove6.jpg';
+import Lovegrove1 from '../../img/Lovegrove/Lovegrove3.jpg';
+import Lovegrove3 from '../../img/Lovegrove/Lovegrove5.jpg';
+import Lovegrove4 from '../../img/Lovegrove/Lovegrove6.jpg';
+import LovegroveThumb from '../../img/Lovegrove/LovegroveVidThumb.png';
 
 const images = [
     Lovegrove1,
-    Lovegrove2,
     Lovegrove3,
-    Lovegrove4,
-    Lovegrove5,
-    Lovegrove6,
+    Lovegrove4
 ];
 
 export default class Lovegrove extends Component {
@@ -30,7 +25,36 @@ export default class Lovegrove extends Component {
             isOpen: false,
         };
     }
+    componentDidMount = function () {
+        // Stops iframe from playing on Modal-Close
+        function iframeReload() {
+            var iframe = document.getElementsByTagName('iframe');
+            iframe[0].src = iframe[0].src;
+        }
+
+        // Toggles iframe mofals
+        var toggleVimeoEmbed = function () {
+            vimeoLightbox[0].classList.toggle("lightboxVisible");
+        };
+
+        var vimeoLightbox = document.getElementsByClassName("iframeContainer");
+        vimeoLightbox[0].addEventListener('click', toggleVimeoEmbed);
+        vimeoLightbox[0].addEventListener('click', iframeReload);
+
+
+        var vidThumb = document.getElementsByClassName("loveThumb");
+        vidThumb[0].addEventListener('click', toggleVimeoEmbed);
+    };
     render() {
+        var numberSetter = 0;
+        function deviceSizer(x) {
+            if (x.matches) {
+                numberSetter = 100;
+            }
+        }
+        var x = window.matchMedia("(min-width: 700px)")
+        deviceSizer(x)
+
         const { photoIndex, isOpen } = this.state;
         return (
             <div className="outerProject">
@@ -43,21 +67,25 @@ export default class Lovegrove extends Component {
                     </div>
                     <div className="projectContainer">
                         <section className="galleryContainer">
+                            <img src={LovegroveThumb} alt="" className="loveThumb" />
                             <img src={Lovegrove1} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />
-                            <img src={Lovegrove2} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
-                            <img src={Lovegrove3} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
-                            <img src={Lovegrove4} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 3 })} />
-                            <img src={Lovegrove5} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                            <img src={Lovegrove6} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 5 })} />
+                            <img src={Lovegrove3} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
+                            <img src={Lovegrove4} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
                         </section>
                         <section className="description">
                             <h3>Ross Lovegrove, Website</h3>
                             <h5>Web Development</h5>
                             <h5>Nov, 2009</h5>
                             <div className="fakeHR" />
-                            <p>This is a whole bunch of nonsense about this particular project.</p>
-                            <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
+                            <p>"Ross Lovegrove is a designer and visionary whose work is considered to be at the very apex of stimulating a profound change in the physicality of our three dimensional world."</p>
+                            <p>A bio like that requires an equally profound website... Sadly I didn't have access to any Augmented Reality software so I had to settle for stark black and white with pops of sunset orange to reflect Ross's meld of technology and nature</p>
                         </section>
+
+                        <div className="iframeContainer">
+                            <div className="innerIframeContainer">
+                                <iframe title="galleryVid" src="https://player.vimeo.com/video/195355328" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <Footer />
@@ -78,7 +106,7 @@ export default class Lovegrove extends Component {
                             })
                         }
                         enableZoom={false}
-                        imagePadding={100}
+                        imagePadding={numberSetter}
                     />
                 )}
             </div>

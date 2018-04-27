@@ -17,19 +17,17 @@ export default class HeaderNav extends Component {
 
   render() {
     return (
-      <div className="navWrapper">
-        <div className="navCont">
-          <Link to="/"><img src={homeFlag} alt="return home" className="homeFlag" /></Link>
-          <img src={homeFlag} alt="menu" className="menuFlag" />
-          <div className="menuCont">
-            <h2><NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink></h2>
-            <h2><NavLink to="/about" activeClassName="active">About</NavLink></h2>
-            <h2><NavLink to="/blog" activeClassName="active">Blog</NavLink></h2>
-            <h2><a href="http://Hellojared.bigcartel.com" target="_blank" rel="noopener noreferrer" activeClassName="active">Shop</a></h2>
-          </div>
+      <div className="navCont">
+        <Link to="/"><img src={homeFlag} alt="return home" className="homeFlag" /></Link>
+        <img src={homeFlag} alt="menu" className="menuFlag" />
+        <div className="menuCont">
+          <h2><NavLink to="/portfolio" activeclassname="active">Portfolio</NavLink></h2>
+          <h2><NavLink to="/about" activeclassname="active">About</NavLink></h2>
+          <h2><NavLink to="/blog" activeclassname="active">Blog</NavLink></h2>
+          <h2><a href="http://Hellojared.bigcartel.com" target="_blank" rel="noopener noreferrer" activeclassname="active">Shop</a></h2>
+           
         </div>
       </div>
     );
   }
 }
-

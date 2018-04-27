@@ -30,7 +30,17 @@ export default class Ocampo extends Component {
             isOpen: false,
         };
     }
+
     render() {
+        var numberSetter = 0;
+        function deviceSizer(x) {
+            if (x.matches) {
+                numberSetter = 100;
+            }
+        }
+        var x = window.matchMedia("(min-width: 700px)")
+        deviceSizer(x)
+
         const { photoIndex, isOpen } = this.state;
         return (
             <div className="outerProject">
@@ -55,8 +65,8 @@ export default class Ocampo extends Component {
                             <h5>Illustration, Packaging, Product</h5>
                             <h5>Nov, 2009</h5>
                             <div className="fakeHR" />
-                            <p>This is a whole bunch of nonsense about this particular project.</p>
-                            <p>Visit my shop and blog to view my personal work, adventures, and exploits.</p>
+                            <p>My sister and brother-in-law asked me to help them design these enamel pins for their wedding. Their idea was to take the characteristics of themselves and their wedding and create wedding favors out of them. Really, a cool idea I was excited to be a part of.</p>
+                            <p>The fountain pin is representative of where their ceremony took place, a little park called Libby Hill in Richmond, Va. The hotel where their ceremony took place is an awesome Wes Anderson-esque spot called Quirk Hotel, and that cute little frenchie there is my nephew Beaux.</p>
                         </section>
                     </div>
                 </div>
@@ -78,7 +88,7 @@ export default class Ocampo extends Component {
                             })
                         }
                         enableZoom={false}
-                        imagePadding={100}
+                        imagePadding={numberSetter}
                     />
                 )}
             </div>

@@ -65,7 +65,7 @@ export default class BrauHaus extends Component {
                         <section className="description">
                             <h3>Brau Haus Brewing</h3>
                             <h5>Branding, Identity, Packaging</h5>
-                            <h5>Nov, 2009</h5>
+                            <h5 className="projDate">Nov, 2009</h5>
                             <div className="fakeHR" />
                             <p>Brau Haus is the microbrewery chillin on the corner that all the other breweries wish they could be. Brau Haus packs a snarky attitude and a genuine love for puns. Try the "BRAU F!@*KIN' DOWN" or maybe the "BRAU YOU DOIN'?" or maybe even the new German Witbeir "MEIN BRAULEIN."</p>
                             <p>But really, Brau Haus packs slick design, packaging, and a just hip enough attitude that puts it above the competition. The catchy beer names are just extra credit.</p>

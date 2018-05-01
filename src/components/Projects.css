@@ -5,8 +5,6 @@
   margin: 0 auto;
 }
 
-
-
 .backArrow {
   display:none;
 }
@@ -25,20 +23,40 @@
   grid-template-columns:50% 50%;
   grid-gap:12px;
   margin-left:-10px;
-
 }
+
 
 .projectPage .description {
   display:block;
   /* border:2px solid red; */
-  margin-top:200px;
+  margin:70px 0;
+}
+
+.projectPage.short .description {
+  margin-top:-45px;
+}
+
+.projectPage h3 {
+  margin-bottom:10px;
 }
 
 .projectPage h5 {
   color:#9b9b9b;
   font-family: 'Libre Baskerville', serif;  
   font-weight:normal;
-  font-size:12px;
+  font-size:14px;
+  margin: 0 0 10px;
+}
+
+.projectPage h5.projDate {
+  font-size:11px;
+} 
+
+.projectPage .fakeHR {
+  border-bottom:1px solid #9b9b9b;;
+  height:1px;
+  width:45%;
+  margin:25px 0;
 }
 
 .projectPage p {
@@ -81,6 +99,80 @@
     grid-row:6/7; 
   }
 
+
+
+  .iframeContainer {
+    display:none;
+  }
+
+  .iframeContainer.lightboxVisible {
+    width:100vw;
+    height:100vh;
+    background-color:rgba(0,0,0,0.6);
+    z-index:10;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border:5px solid blue; */
+  }
+
+  .innerIframeContainer {
+    /* border:2px solid green; */
+  }
+
+  [title="galleryVid"] {
+    height:190px;
+    width:280px;
+    /* border:2px solid red; */
+  }
+
+    /* ------------------------ BREAK POINT ------------------ */
+
+  @media (min-width:375px) {
+    [title="galleryVid"] {
+      height:220px;
+      width:325px;
+    }
+
+    .galleryContainer {
+      height:600px;
+    }
+
+  }
+
+  /* ------------------------ BREAK POINT ------------------ */
+
+@media (min-width:410px) {
+  [title="galleryVid"] {
+    height:260px;
+    width:375px;
+  }
+}
+
+  /* ------------------------ BREAK POINT ------------------ */
+
+  @media (min-width:768px) {
+    [title="galleryVid"] {
+      height:400px;
+      width:600px;
+    }
+
+    .galleryContainer {
+      height:900px;
+    }
+
+    .projectContainer {
+      width:80%;
+    }
+
+    .projectPage.short .description {
+      margin-top:-75px;
+    }
+  }
 
   
 
@@ -158,45 +250,21 @@
     flex:1 0 auto;
   }
 
-  .iframeContainer {
-    display:none;
-  }
-
-  .iframeContainer.lightboxVisible {
-    width:100vw;
-    height:100vh;
-    background-color:rgba(0,0,0,0.6);
-    z-index:10;
-    position: fixed;
-    top:0;
-    left:0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border:5px solid blue;
-  }
-
-  .innerIframeContainer {
-    border:2px solid green;
-  }
-
   [title="galleryVid"] {
-    height:56vh;
-    width:75vw;
-    border:2px solid red;
+    height:520px;
+    width: 850px;
+  }  
+
+  .projectPage h5 {
+    font-size:12px;
+  }
+
+  .projectPage.short .description {
+    margin-top:0;
   }
 
 
 }
 
-@media (min-width:1400px) {
-  [title="galleryVid"] {
-    height:56vh;
-    width:65vw;
-    max-width:900px;
-    border:2px solid red;
-  }
-}
 
 

@@ -79,7 +79,7 @@ export default class Space extends Component {
                         <section className="description">
                             <h3>Space Age</h3>
                             <h5>Web Development, Illustration</h5>
-                            <h5>Nov, 2009</h5>
+                            <h5 className="projDate">Nov, 2009</h5>
                             <div className="fakeHR" />
                             <p>I did some of my best doodles in math and science class, and if it weren't for those classes who knows what I'd be doing now. Hopefully not math or science.</p>
                             <p>This website was created with the intention of getting kids interested in space and education while exercising their most important muscle, their imagination.</p>

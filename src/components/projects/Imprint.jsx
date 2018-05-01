@@ -62,7 +62,7 @@ export default class Imprint extends Component {
                         <section className="description">
                             <h3>Imprint</h3>
                             <h5>Multimedia, Branding, Identity</h5>
-                            <h5>Nov, 2009</h5>
+                            <h5 className="projDate">Nov, 2009</h5>
                             <div className="fakeHR" />
                             <p>Imprint’s identity was based on total flexibility of use. The “i” logo mark, well, it stands for Imprint but it’s also a great window for incorporating images, animations, video, or whatever multimedia case that could be needed. </p>
                             <p>The flexibility of use was just what Imprint was looking for, not only as a screen printing business, but also a web and print design studio. They covered all their bases on the multi-service front, and this identity package helps them continue to do that.</p>

@@ -85,7 +85,7 @@ export default class Icons extends Component {
                         <section className="description">
                             <h3>Icon Construction Grid</h3>
                             <h5>UI/UX, System Design</h5>
-                            <h5>Nov, 2009</h5>
+                            <h5 className="projDate">Nov, 2009</h5>
                             <div className="fakeHR" />
                             <p>While working at Homes.com we got tired of having to school new designers on how to properly build or utilize icons for their UI Designs while also sticking to our brand standards. In an effort to streamline this process we created this nifty little construction grid that helps the new recruits (and the old ones too) accomplish all those things. </p>
                             <p>This grid gives you all the tools you need to create beautiful and simple icons that are readable at every scale, and also maintain consistent line weight, corner radiuses, and interior dimensions. Plus it's really trippy to look at, just try designing icons for 8 hours straight.</p>

@@ -62,7 +62,7 @@ export default class Vigil extends Component {
                         <section className="description">
                             <h3>Vigil Candle Co.</h3>
                             <h5>Branding, Illustration, Product</h5>
-                            <h5>Nov, 2009</h5>
+                            <h5 className="projDate">Nov, 2009</h5>
                             <div className="fakeHR" />
                             <p>Vigil Candle Company has a vibe to them inspired by Late Gothic and Renaissance aesthetic, mixed with a little bit of punk rock and little bit of vintage americana, rounded out with a little bit of “I’ll kick you in your teeth, but it’s ironic cause we make candles.” (That’s how irony works right?) </p>
                             <p>Work for Vigil included some identity and logo design, some packaging for the product, and also some apparel goodies. A local business based out of Norfolk, Va. with a small load of product to push, and a shit load of heart. </p>

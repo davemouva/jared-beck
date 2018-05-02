@@ -77,8 +77,8 @@ export default class CarryNorfolk extends Component {
                         </section>
                         <section className="description">
                             <h3>Carry Norfolk</h3>
-                            <h5>Multimedia, Branding, Identity</h5>
-                            <h5 className="projDate">Nov, 2009</h5>
+                            <h5>Multimedia / Branding / Identity</h5>
+                            <h5 className="projDate">Winter 2017</h5>
                             <div className="fakeHR" />
                             <p>Carry Norfolk is your friendly neighborhood courier service with a knack for community spirit and a love for fixed gear bikes. The "C" stands for yeah, Carry, but it also sticks close to the company's real love, bicycles. </p>
                             <p>The chain keeps the cogs spinning and the wheels moving and the pedals churning all in an effort to get the customer their burrito/beer/divorce papers as quickly as humanly possible. Literally. Bicycles are human powered.</p>

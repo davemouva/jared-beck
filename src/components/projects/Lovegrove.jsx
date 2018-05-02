@@ -75,7 +75,7 @@ export default class Lovegrove extends Component {
                         <section className="description">
                             <h3>Ross Lovegrove, Website</h3>
                             <h5>Web Development</h5>
-                            <h5 className="projDate">Nov, 2009</h5>
+                            <h5 className="projDate">Fall 2016</h5>
                             <div className="fakeHR" />
                             <p>"Ross Lovegrove is a designer and visionary whose work is considered to be at the very apex of stimulating a profound change in the physicality of our three dimensional world."</p>
                             <p>A bio like that requires an equally profound website... Sadly I didn't have access to any Augmented Reality software so I had to settle for stark black and white with pops of sunset orange to reflect Ross's meld of technology and nature</p>

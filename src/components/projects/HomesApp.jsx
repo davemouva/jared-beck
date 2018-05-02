@@ -63,7 +63,7 @@ export default class HomesApp extends Component {
                         <section className="description">
                             <h3>iOS App, Homes.com</h3>
                             <h5>UI/UX</h5>
-                            <h5 className="projDate">Nov, 2009</h5>
+                            <h5 className="projDate">Winter 2017</h5>
                             <div className="fakeHR" />
                             <p>UI design lead on the Homes.com native iOS app. The app redesign came shortly after a redesign of Homes.com’s web experience and we wanted the app to reflect that as well as embrace the UI elements familiar and intuitive to the iOS user. The app takes advantage of both the native UI of iOS and blends it with the design that is reflective of the Homes.com personality.</p>
                             <p>The result is an app that provides an air of both reliability and familiarity. Pair off between the Homes.com web experience and the app experience and enjoy the frictionless transition between the two, all while incorporating what you’ve come to love and understand about your iphone.</p>

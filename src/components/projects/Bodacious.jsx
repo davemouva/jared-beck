@@ -56,8 +56,8 @@ export default class Bodacious extends Component {
                         </section>
                         <section className="description">
                             <h3>Bodacious Pizza</h3>
-                            <h5>Branding, Identity, Product</h5>
-                            <h5 className="projDate">Nov, 2009</h5>
+                            <h5>Branding / Product</h5>
+                            <h5 className="projDate">Summer 2017</h5>
                             <div className="fakeHR" />
                             <p>Logo and type created for Bodacious Pizza. Bodacious is a food truck operating in and around the Hampton Roads area of Virginia. This logo reflects on the mobility of their tasty pies, and the brick oven in which they're created.</p>
                         </section>

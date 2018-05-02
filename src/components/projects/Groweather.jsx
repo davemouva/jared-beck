@@ -59,8 +59,8 @@ export default class Groweather extends Component {
                         </section>
                         <section className="description">
                             <h3>Groweather</h3>
-                            <h5>UI/UX, Identity, Branding</h5>
-                            <h5 className="projDate">Nov, 2009</h5>
+                            <h5>UI/UX</h5>
+                            <h5 className="projDate">Winter 2016</h5>
                             <div className="fakeHR" />
                             <p>Groweather is your little buddy out in the garden. It tells you the weather (obviously) but Groweather also tells you how that weather impacts your gardening regimine. Groweather provides you tips and tricks based on your climate, the season, and through its “patented customizable garden inventory” more specific information based on what it is you're growing.</p>
                             <p>Gardening isn't the easiest thing, but with this powerful little app your black thumb will at least be a like a dark shade of green or something. Beautiful UI, simplified UX, and amazing information to boot.</p>

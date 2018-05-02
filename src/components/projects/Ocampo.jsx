@@ -62,8 +62,8 @@ export default class Ocampo extends Component {
                         </section>
                         <section className="description">
                             <h3>Ocampo Wedding, Enamel Pins</h3>
-                            <h5>Illustration, Packaging, Product</h5>
-                            <h5 className="projDate">Nov, 2009</h5>
+                            <h5>Illustration / Product / Packaging</h5>
+                            <h5 className="projDate">Summer 2016</h5>
                             <div className="fakeHR" />
                             <p>My sister and brother-in-law asked me to help them design these enamel pins for their wedding. Their idea was to take the characteristics of themselves and their wedding and create wedding favors out of them. Really, a cool idea I was excited to be a part of.</p>
                             <p>The fountain pin is representative of where their ceremony took place, a little park called Libby Hill in Richmond, Va. The hotel where their ceremony took place is an awesome Wes Anderson-esque spot called Quirk Hotel, and that cute little frenchie there is my nephew Beaux.</p>

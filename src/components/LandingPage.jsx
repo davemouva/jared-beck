@@ -11,7 +11,6 @@ export default class LandingPage extends Component {
         
         setTimeout(function () {
             let pencilLoader = document.getElementsByClassName('loadingGifContainer')[0];
-            console.log(pencilLoader);
             pencilLoader.style.display = "none";
             mainContainer.style.display = "flex";
         }, 2500);

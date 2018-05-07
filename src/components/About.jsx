@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import HeaderNav from './HeaderNav.jsx';
 import Footer from './Footer.jsx';
 
+import Bio1 from '../img/About/hj-bio1-lg.jpg';
+import Bio2 from '../img/About/hj-bio2-lg.jpg';
+import Bio3 from '../img/About/hj-bio3-lg.jpg';
 
 export default class About extends Component {
     render() {
@@ -10,9 +13,9 @@ export default class About extends Component {
                 <HeaderNav />
                 <div className="aboutCont">
                     <section className="imageGallery">
-                        <img src="http://via.placeholder.com/300x150" alt="placeholder" />
-                        <img src="http://via.placeholder.com/300x150" alt="placeholder" />
-                        <img src="http://via.placeholder.com/300x150" alt="placeholder" />
+                        <img src={Bio1} alt="placeholder" />
+                        <img src={Bio2} alt="placeholder" />
+                        <img src={Bio3} alt="placeholder" />
                     </section>
                     <section className="description">
                         <h3>Jared Beck</h3>

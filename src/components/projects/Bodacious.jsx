@@ -27,6 +27,11 @@ export default class Bodacious extends Component {
             isOpen: false,
         };
     }
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
         var numberSetter = 0;
         function deviceSizer(x) {
@@ -40,13 +45,12 @@ export default class Bodacious extends Component {
         return (
             <div className="outerProject">
                 <HeaderNav />
+                <div className="backArrow">
+                    <Link to="/portfolio">
+                        <img src={BackArrow} alt="Back to Portfolio" />
+                    </Link>
+                </div>
                 <div className="projectPage short">
-                    <div className="backArrow">
-                        <Link to="/portfolio">
-                            <img src={BackArrow} alt="Back to Portfolio" />
-                        </Link>
-                    </div>
-
                     <div className="projectContainer">
                         <section className="galleryContainer">
                             <img src={Bod1} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />

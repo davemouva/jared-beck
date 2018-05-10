@@ -8,7 +8,8 @@
 }
 
 .heroImg {
-  width:80%;
+  /* width:80%; */
+  width:250px;
   height:auto;
   max-width: 600px;
 }
@@ -25,7 +26,8 @@
 .galleryItem {
   height:200px;
   width:250px;
-  padding-left:20px;
+  /* padding-left:20px; */
+  padding-left:0;
 }
 
 .galleryItem.hoverActive img {
@@ -76,7 +78,6 @@
 
 @media (min-width:625px){
   .heroImg {
-    width:40%;
     margin-top:30px;
   }
 
@@ -86,5 +87,31 @@
 
   .galleryItem {
     height:250px;
+    padding-left: 20px;
   }
+
+}
+
+/* ------------------------- BREAK POINT -------------------------------------- */
+
+@media (min-width:675px){
+
+  .heroImg {
+    width:450px;
+  }
+
+  .gallery {
+    right:10px;
+    position: relative;
+  }
+
+}
+
+/* ------------------------- BREAK POINT -------------------------------------- */
+
+@media (min-width:1400px){
+  .heroImg {
+    width:40%;
+  }
+
 }

@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import HeaderNav from './HeaderNav.jsx';
 import Footer from './Footer.jsx';
 
-import Bio1 from '../img/About/hj-bio1-lg.jpg';
-import Bio2 from '../img/About/hj-bio2-lg.jpg';
-import Bio3 from '../img/About/hj-bio3-lg.jpg';
+import Bio1 from '../img/About/hj-bio1.jpg';
+import Bio3 from '../img/About/hj-bio3.jpg';
+import Bio4 from '../img/About/hj-bio4.jpg';
 
 export default class About extends Component {
     render() {
@@ -14,7 +14,7 @@ export default class About extends Component {
                 <div className="aboutCont">
                     <section className="imageGallery">
                         <img src={Bio1} alt="placeholder" />
-                        <img src={Bio2} alt="placeholder" />
+                        <img src={Bio4} alt="placeholder" />
                         <img src={Bio3} alt="placeholder" />
                     </section>
                     <section className="description">

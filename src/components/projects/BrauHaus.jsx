@@ -32,6 +32,11 @@ export default class BrauHaus extends Component {
             isOpen: false,
         };
     }
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
         var numberSetter = 0;
         function deviceSizer(x) {
@@ -45,13 +50,12 @@ export default class BrauHaus extends Component {
         return (
             <div className="outerProject">
                 <HeaderNav />
+                <div className="backArrow">
+                    <Link to="/portfolio">
+                        <img src={BackArrow} alt="Back to Portfolio" />
+                    </Link>
+                </div>
                 <div className="projectPage">
-                    <div className="backArrow">
-                        <Link to="/portfolio">
-                            <img src={BackArrow} alt="Back to Portfolio" />
-                        </Link>
-                    </div>
-                    
                     <div className="projectContainer">
                         <section className="galleryContainer">
                             <img src={Brau1} alt="" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />

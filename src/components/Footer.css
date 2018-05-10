@@ -71,7 +71,7 @@
 
 @media (min-width:768px) {
   .footerInnerCont {
-    width: 70%;
+    width: 650px;
     margin:60px auto 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -126,7 +126,7 @@
 @media (min-width:1200px) {
 
   .footerInnerCont {
-    width: 45%;
+    width: 700px;
   }
 
   .footerStamp {

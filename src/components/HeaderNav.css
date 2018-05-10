@@ -24,7 +24,7 @@
 .navCont h2 {
   display: inline-block;
   position: relative;
-  top:8px;
+  /* top:8px; */
 }
 
 .navCont h2 > a {
@@ -69,6 +69,11 @@
 /* --------------------- MEDIA QUERY ------------------------------------*/
 
 @media (min-width:625px){
+
+  .navCont {
+    height: auto;
+  }
+
   .navCont .homeFlag {
     width:auto;
     height: 45px;
@@ -98,4 +103,5 @@
   .navCont h2 > a {
     font-size:20px;
   }
+
 }

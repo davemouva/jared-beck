@@ -11,25 +11,26 @@
 
 .projectContainer {
   width:90%;
-  /* border:2px solid blue; */
   margin:20px auto;
 }
 
 .galleryContainer {
   height:500px;
-  /* border:2px solid black; */
+  width:270px;
   display:grid;
   grid-template-rows:repeat(6,16%);
   grid-template-columns:50% 50%;
   grid-gap:12px;
-  margin-left:-10px;
+  margin:0 auto;
+  position: relative;
+  right:5px;
 }
 
 
 .projectPage .description {
   display:block;
-  /* border:2px solid red; */
-  margin:70px 0;
+  margin:70px auto;
+  width:275px;
 }
 
 .projectPage.short .description {
@@ -48,10 +49,6 @@
   margin: 0 0 10px;
 }
 
-.projectPage h5.projDate {
-  font-size:11px;
-} 
-
 .projectPage .fakeHR {
   border-bottom:1px solid #d2d2d2;;
   height:1px;
@@ -63,12 +60,10 @@
   font-family: Courier,monospace;
   font-size: 12px;
   color: #272727;
-  /* line-height: 135%; */
 }
 
 .galleryContainer img,
 .galleryContainer iframe {
-  /*   border:1px solid red; */
     object-fit: cover;
     width:100%;
     height:100%;
@@ -117,17 +112,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border:5px solid blue; */
-  }
-
-  .innerIframeContainer {
-    /* border:2px solid green; */
   }
 
   [title="galleryVid"] {
     height:190px;
     width:280px;
-    /* border:2px solid red; */
   }
 
     /* ------------------------ BREAK POINT ------------------ */
@@ -139,9 +128,13 @@
     }
 
     .galleryContainer {
+      width: 320px;
       height:600px;
     }
 
+    .projectPage .description {
+      width:320px;
+    }
   }
 
   /* ------------------------ BREAK POINT ------------------ */
@@ -151,6 +144,7 @@
     height:260px;
     width:375px;
   }
+
 }
 
   /* ------------------------ BREAK POINT ------------------ */
@@ -162,6 +156,7 @@
     }
 
     .galleryContainer {
+      width: 500px;
       height:900px;
     }
 
@@ -169,8 +164,25 @@
       width:80%;
     }
 
+    .projectPage .description {
+      width: 510px;
+    }
+
     .projectPage.short .description {
       margin-top:-75px;
+    }
+  }
+
+  /* ------------------------ BREAK POINT ------------------ */
+
+  @media (min-width:1024px) {
+    .galleryContainer {
+      width:700px;
+      height:1100px;
+    }
+
+    .projectPage .description{
+      width:710px;
     }
   }
 
@@ -179,9 +191,15 @@
 /* -------------------------- BREAK POINT ------------------------ */
 
 @media (min-width:1200px) {
+
+.projectPage {
+  margin-bottom:65px;
+}
+
   .backArrow {
     display: inherit;
-    padding:20px 0;
+    /* padding:20px 0; */
+    padding:30px 0 30px 35px;
   }
 
   .backArrow img {
@@ -191,7 +209,6 @@
   .projectContainer {
     width:80%;
     max-width:900px;
-    /* border:2px solid blue; */
     margin:0 auto 80px;
   }
 
@@ -199,7 +216,6 @@
     height:350px;
     width:47%;
     max-width:490px;
-    /* border:2px solid black; */
     display:inline-grid;
     grid-template-rows:repeat(4,25%);
     grid-template-columns:60% 30%;
@@ -208,13 +224,11 @@
   }
 
   .projectPage .description {
-    display:inline-block;
     vertical-align: top;
     width:45%;
     text-align: left;
     margin-top:0;
     float: right;
-    /* border:2px solid red; */
   }
   .galleryContainer img:nth-child(1){
     grid-column:1/3;
@@ -257,14 +271,23 @@
   }  
 
   .projectPage h5 {
-    font-size:13px;
+    font-size:14px;
   }
 
   .projectPage.short .description {
     margin-top:0;
   }
 
+}
 
+
+/* --------------------- VERTICAL PAGE BREAK POINT -----------------*/
+
+@media (min-height:1200px) {
+  .projectContainer {
+    margin-top: 30px;
+
+  }
 }
 
 

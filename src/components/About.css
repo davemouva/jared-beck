@@ -92,7 +92,7 @@
   }
 
   .aboutCont {
-    margin: 50px auto;
+    margin: 50px auto 100px;
     max-width:800px;
     flex:1 0 auto;
   }
@@ -111,6 +111,7 @@
     width:45%;
     vertical-align: top;
     margin-left:40px;
+    padding-top:0;
   }
 
 

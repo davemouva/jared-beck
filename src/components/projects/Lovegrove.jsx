@@ -26,6 +26,9 @@ export default class Lovegrove extends Component {
         };
     }
     componentDidMount = function () {
+
+        window.scrollTo(0, 0);
+
         // Stops iframe from playing on Modal-Close
         function iframeReload() {
             var iframe = document.getElementsByTagName('iframe');
@@ -59,12 +62,12 @@ export default class Lovegrove extends Component {
         return (
             <div className="outerProject">
                 <HeaderNav />
+                <div className="backArrow">
+                    <Link to="/portfolio">
+                        <img src={BackArrow} alt="Back to Portfolio" />
+                    </Link>
+                </div>
                 <div className="projectPage short">
-                    <div className="backArrow">
-                        <Link to="/portfolio">
-                            <img src={BackArrow} alt="Back to Portfolio" />
-                        </Link>
-                    </div>
                     <div className="projectContainer">
                         <section className="galleryContainer">
                             <img src={LovegroveThumb} alt="" className="loveThumb" />

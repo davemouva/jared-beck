@@ -11,7 +11,8 @@ export default class Blog extends Component {
     }
   }
   componentDidMount() {
-    let dataURL = "http://localhost:8888/wordpress/wp-json/wp/v2/hjposts?_embed";
+    // let dataURL = "http://localhost:8888/wordpress/wp-json/wp/v2/hjposts?_embed";
+    let dataURL = "http://davemoral.es/hjblog/wp-json/wp/v2/hjposts?_embed";
     fetch(dataURL)
       .then(res => res.json())
       .then(res => {

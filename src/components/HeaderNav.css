@@ -19,8 +19,6 @@
   left:30px; 
 }
 
-
-
 .navCont h2 {
   display: inline-block;
   position: relative;
@@ -69,9 +67,10 @@
 
 @media (min-width:625px){
 
-  .navCont {
+  /* Removed - causing safari issues */
+  /* .navCont {
     height: auto;
-  }
+  } */
 
   .navCont .homeFlag {
     width:auto;

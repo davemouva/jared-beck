@@ -10,7 +10,7 @@
 
 .blogContent {
   width:75%;
-  margin:20px auto 60px;
+  margin:60px auto;
 }
 
 .postContent {
@@ -59,8 +59,6 @@ iframe {
 
   .blogContent {
     width:40%;
-    margin:60px auto;
-
   }
 
 }

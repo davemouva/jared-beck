@@ -2,7 +2,7 @@
   width:100%;
   height:85px;
   background-color: white;
-  /* display: inline-block; */
+  display: -ms-grid;
   display: grid;
   text-align: center;
 }
@@ -24,7 +24,6 @@
 .navCont h2 {
   display: inline-block;
   position: relative;
-  /* top:8px; */
 }
 
 .navCont h2 > a {

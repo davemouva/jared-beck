@@ -87,14 +87,21 @@
 
   .outerAbout {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .aboutCont {
     margin: 50px auto 100px;
     max-width:800px;
-    flex:1 0 auto;
+    -webkit-box-flex:1;
+        -ms-flex:1 0 auto;
+            flex:1 0 auto;
   }
 
   .aboutCont .imageGallery {
@@ -127,4 +134,3 @@
     line-height: 150%;
   }
 }
-

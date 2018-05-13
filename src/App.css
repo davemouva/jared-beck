@@ -10,7 +10,6 @@ body {background-color: #fbfbfb;}
   text-align: center;
   height:98vh;
   width:100vw;
-  /* margin: 30px auto ; */
   background-color: #f47c20;
 }
 
@@ -45,9 +44,16 @@ h3,h4{
 
 .mainContainer {
   height:100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .loadingGif {
@@ -59,9 +65,16 @@ h3,h4{
 
 .loadingGifContainer {
   height:100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* ------------------------------  BREAKPOINT -------------------------------------------- */
@@ -71,8 +84,12 @@ h3,h4{
 
   .mainContainer .landing {
     height:100%;
+    display:-webkit-inline-box;
+    display:-ms-inline-flexbox;
     display:inline-flex;
-    align-items: center; 
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; 
     margin:0 70px 0 60px;
   }
 
@@ -91,7 +108,6 @@ h3,h4{
     font-weight:normal;
     word-spacing: 3px;
     font-size:12px;
-    /* margin:0; */
   }
     
   p {
@@ -111,14 +127,20 @@ h3,h4{
   
   
   .mainContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center; 
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; 
     height:100%;
     width:700px;
     margin:0 auto;
     position: relative;
-    /* border:2px solid black; */
   }
   
 

@@ -1,5 +1,6 @@
- .footer {
-  flex-shrink: 0;
+.footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   border-top:2px solid #f47c20;
   position: relative;
   text-align: center;
@@ -86,7 +87,8 @@
   .footerCol3 {
     display: inline-block; 
     width:33%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     vertical-align: top;
     text-align: center;
   }

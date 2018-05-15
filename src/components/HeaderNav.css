@@ -1,6 +1,7 @@
 .navCont {
   width:100%;
-  height:85px;
+  /* Safari Issue */
+  /* height:85px; */
   background-color: white;
   display: -ms-grid;
   display: grid;

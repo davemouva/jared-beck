@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch, HashRouter } from "react-router-dom";
 import LandingPage from './components/LandingPage.jsx';
 
 import Portfolio from './components/Portfolio.jsx';
@@ -23,7 +23,7 @@ import NotFound from './components/NotFound.jsx';
 
 
 export default (
-  <BrowserRouter>
+  <HashRouter>
     <Switch>
       <Route path="/" exact component={LandingPage} />
 
@@ -45,5 +45,5 @@ export default (
       {/* <Route render={() => <h1>Page not found</h1>} /> */}
       <Route component={NotFound} />
     </Switch>
-  </BrowserRouter>
+  </HashRouter>
 );

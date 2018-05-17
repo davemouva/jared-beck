@@ -1,10 +1,7 @@
 .navCont {
   width:100%;
-  /* Safari Issue */
-  /* height:85px; */
+  height:85px;
   background-color: white;
-  display: -ms-grid;
-  display: grid;
   text-align: center;
 }
 
@@ -68,10 +65,9 @@
 
 @media (min-width:625px){
 
-  /* Removed - causing safari issues */
-  /* .navCont {
-    height: auto;
-  } */
+  .navCont {
+    height: initial;
+  }
 
   .navCont .homeFlag {
     width:auto;

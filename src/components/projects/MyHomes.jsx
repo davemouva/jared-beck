@@ -70,6 +70,7 @@ export default class MyHomes extends Component {
                             <h5 className="projDate">Winter 2017</h5>
                             <div className="fakeHR" />
                             <p>UI design lead on this project for Homes.com. MyHomes was created as a collaborative space between home buyers and real estate agents, and everybody else in between. We wanted to take some of the “process” out of the home buying process. MyHomes helps to foster an atmosphere that made the experience of buying a home more symbiotic, more organized, and just more fun.  </p>
+                            <p>Create lists of homes you love, share those with your home-buying cohorts. Have them share their lists of potential homes with you. Most importantly, create lists together, leave your feedback, read theirs, and leave the hassle out of it.</p>
                         </section>
                     </div>
                 </div>

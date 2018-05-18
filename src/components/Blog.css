@@ -1,3 +1,6 @@
+
+
+
 #root > .outerBlog {
   height: 100vh;
   display: -webkit-box;
@@ -17,7 +20,7 @@
 
 .blogContent {
   width:75%;
-  margin:60px auto;
+  margin:90px auto 60px;
 }
 
 .postContent {
@@ -60,6 +63,12 @@ iframe {
 .horizRule {
   border-bottom:1px solid #ddd;
   margin:30px 0;
+}
+
+@media (min-width:625px) {
+  .blogContent {
+    margin:60px auto;
+  }
 }
 
 @media (min-width:1200px) {

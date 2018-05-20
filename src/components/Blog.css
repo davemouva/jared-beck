@@ -27,11 +27,12 @@
   font-family: Courier, monospace;
 }
 
-.postContent p{
+.postContent p,
+.postContent span{
   font-size: 13px;
 }
 
-.postContent p > img
+.postContent img
 {
  width:100%;
  height:auto;
